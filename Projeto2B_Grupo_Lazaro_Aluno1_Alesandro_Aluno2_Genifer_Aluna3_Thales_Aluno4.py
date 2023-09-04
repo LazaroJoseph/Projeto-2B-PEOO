@@ -3,11 +3,11 @@ class Animal:
         self.nome = nome
         self.cor = cor
         self.sexo = sexo
-        self.velocidade = velocidade
-        self.peso = peso
-        self.estamina = estamina
-        self.posicao_x = posicao_x
-        self.posicao_y = posicao_y
+        self.velocidade = int(velocidade)
+        self.peso = int(peso)
+        self.estamina = int(estamina)
+        self.posicao_x = int(posicao_x)
+        self.posicao_y = int(posicao_y)
 
     def imprimir_caracteristicas(self):
         print("Nome:", self.nome)
@@ -123,8 +123,8 @@ class Gato(Animal):
 
 
 class Vaca(Animal):
-    def __init__(self, nome, cor, sexo, velocidade, peso, estamina, posx, posy, raca):
-        super().__init__(nome, cor, sexo, velocidade, peso, estamina, posx, posy)
+    def __init__(self, nome, cor, sexo, velocidade, peso, estamina, posicao_x, posicao_y, raca):
+        super().__init__(nome, cor, sexo, velocidade, peso, estamina, posicao_x, posicao_y)
         self.raca = raca
 
     def emitir_som(self):
@@ -138,13 +138,13 @@ class Vaca(Animal):
 
 
 class Camaleao(Animal):
-    def __init__(self, nome, cor, sexo, velocidade, peso, estamina, posx, posy):
-        super().__init__(nome, cor, sexo, velocidade, peso, estamina, posx, posy)
+    def __init__(self, nome, cor, sexo, velocidade, peso, estamina, posicao_x, posicao_y):
+        super().__init__(nome, cor, sexo, velocidade, peso, estamina, posicao_x, posicao_y)
 
 
 class Rato(Animal):
     def __init__(self, nome, cor, sexo, velocidade, peso, estamina, posx, posy, tipo):
-        super().__init__(nome, cor, sexo, velocidade, peso, estamina, posx, posy)
+        super().__init__(nome, cor, sexo, velocidade, peso, estamina, posicao_x, posicaoy)
         self.tipo = tipo
 
     def emitir_som(self):
